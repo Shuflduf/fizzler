@@ -2,12 +2,14 @@
 	import SlackLink from '$lib/SlackLink.svelte';
 </script>
 
-<div class="flex h-[35rem] flex-row items-center bg-[#CEB1BE]">
-	<div class="flex h-full w-full flex-col items-center justify-center">
-		<h1 class="font-[Arvo] text-9xl font-bold text-[#2D2D34]">Fizzler</h1>
-		<h2 class="font-[Arvo] text-4xl text-[#2D2D34]">Make a Tauri app, Get a fizzy drink!</h2>
+<div class="h-[35rem] w-full bg-[#CEB1BE]">
+	<div class="mx-auto flex h-full w-7xl flex-row items-center">
+		<div class="flex h-full w-full flex-col items-center justify-center">
+			<h1 class="font-[Arvo] text-9xl font-bold text-[#2D2D34]">Fizzler</h1>
+			<h2 class="font-[Arvo] text-4xl text-[#2D2D34]">Make a Tauri app, Get a fizzy drink!</h2>
+		</div>
+		<div class="h-full w-full"></div>
 	</div>
-	<div class="h-full w-full"></div>
 </div>
 <div class="h-1 w-full bg-[#B97375]"></div>
 <div class="flex h-[35rem] w-full flex-col justify-center bg-[#E2DCDE]">
@@ -35,3 +37,4 @@
 		</ul>
 	</div>
 </div>
+<div class="h-1 w-full bg-[#B97375]"></div>
