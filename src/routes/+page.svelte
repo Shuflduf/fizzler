@@ -1,4 +1,5 @@
 <script>
+	import FizzlerSlackLink from '$lib/FizzlerSlackLink.svelte';
 	import SlackLink from '$lib/SlackLink.svelte';
 	import Question from './Question.svelte';
 </script>
@@ -30,8 +31,7 @@
 			</li>
 			<li>
 				<b>
-					Show off your drink in
-					<SlackLink link="https://hackclub.slack.com/archives/C09AD0R1SUV">#fizzlers</SlackLink>:
+					Show off your drink in <FizzlerSlackLink />:
 				</b> Pepsi, Monster, some obscure energy drink, pretty much anything that you SHOULDN'T shake
 				before opening!
 			</li>
@@ -40,15 +40,47 @@
 </div>
 <div class="h-1 w-full bg-[#B97375]"></div>
 
-<div class="flex h-[40rem] w-full flex-col justify-center bg-[#F1E4E8]">
-	<div class="mx-auto flex h-full w-4xl flex-col justify-center gap-8">
-		<h1>FAQ</h1>
-		<div class="flex w-full flex-row justify-center gap-8">
-			<Question
-				question="Can I submit an existing project?"
-				answer="You need to create a new project for Fizzler, existing projects won't be accepted."
-			/>
-			<Question question="Can I submit my project for Summer of Making as well?" answer="🐸🚀" />
-		</div>
+<div class="flex h-[40rem] w-full flex-col justify-center gap-8 bg-[#F1E4E8]">
+	<h1 class="text-center">FAQ</h1>
+	<div class="flex w-full flex-row justify-center gap-8">
+		<Question question="Can I submit an existing project?">
+			<p>You need to create a new project for Fizzler, existing projects won't be accepted.</p>
+		</Question>
+		<Question question="Can I submit my project for Summer of Making as well?">
+			<p>🐸🚀</p>
+		</Question>
+	</div>
+	<div class="flex w-full flex-row justify-center gap-8">
+		<Question question="Is AI allowed?">
+			<p>
+				We advise against it, since it removes the fun of making it yourself, but if you do use it,
+				you need to say so on your submission form.
+			</p>
+		</Question>
+		<Question question="What platforms do I make my app for?">
+			<p>
+				If you're making a desktop app, then Windows, MacOS, and Linux. If you're making a mobile
+				app, then just Android. (IF IOS THEN REACH OUT TO US ON SLACK (<FizzlerSlackLink />))
+			</p>
+		</Question>
+	</div>
+	<div class="flex w-full flex-row justify-center gap-8">
+		<Question question="Where can I learn Tauri?">
+			<p>
+				The <a href="https://v2.tauri.app/start/" class="text-blue-500 hover:text-blue-400">
+					Tauri docs
+				</a>
+				provide a guide for creating a basic project, and you can look at
+				<a
+					href="https://github.com/Shuflduf/Tauri-Game-Launcher"
+					class="text-blue-500 hover:text-blue-400"
+				>
+					the example project
+				</a> for a complete example.
+			</p>
+		</Question>
+		<Question question="How do I host my app?">
+			<p>This choice isn't that important, but we recommend using GitHub releases.</p>
+		</Question>
 	</div>
 </div>
