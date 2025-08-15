@@ -2,6 +2,7 @@
 	import FizzlerSlackLink from '$lib/FizzlerSlackLink.svelte';
 	import Ideas from './Ideas.svelte';
 	import Question from './Question.svelte';
+	import Resource from './Resource.svelte';
 </script>
 
 <div class="h-[40rem] w-full bg-[#AF4D98]">
@@ -10,7 +11,10 @@
 			<h1 class="font-[Arvo] text-9xl font-bold text-[#F4E4BA]">Fizzler</h1>
 			<h2 class="font-[Arvo] text-4xl text-[#F4E4BA]">Make a Tauri app, Get a Fizzy Drink!</h2>
 		</div>
-		<div class="h-full w-full">some image would go here maybe</div>
+		<div class="h-full w-full">
+			some image would go here maybe OR THERES LIKE AN SVG PATH BEHIND THE MAIN TEXT WHICH ANIMATES
+			IN AND IT MASKS IT OUT LIKE YKNOW
+		</div>
 	</div>
 </div>
 
@@ -106,4 +110,16 @@
 <div class="flex w-full flex-col justify-center bg-[#F4E4BA] py-24 text-[#D66BA0]">
 	<h1 class="mb-8 text-center font-[Arvo] text-7xl font-bold">Some Ideas</h1>
 	<Ideas />
+	<p class="mt-4 text-center text-xl font-bold">
+		But feel free to do whatever you can think of. The crazier, the better!
+	</p>
+</div>
+
+<div class="flex w-full flex-col justify-center bg-[#E5A9A9] py-24 text-[#9DF7E5]">
+	<h1 class="mb-8 text-center font-[Arvo] text-7xl font-bold">Get Started</h1>
+	<Resource name="Tauri Docs" imgPath="tauri.webp" flipped={false}>
+		If you're just starting out, or you need a refresher on the basics, the Tauri docs are perfect
+		for learning what the framework has to offer. Everything on the docs can be applied to your
+		project!
+	</Resource>
 </div>
