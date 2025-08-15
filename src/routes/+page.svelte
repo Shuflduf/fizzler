@@ -33,9 +33,7 @@
 			<li>
 				<b>Submit your project to earn a <i>Fizzy Drink</i>:</b> 5$ USD per hour spent on project,
 				maximum 5 hours. Tracked with
-				<a class="text-blue-500 hover:text-blue-400" href="https://hackatime.hackclub.com/"
-					>Hackatime</a
-				>
+				<a class="underline decoration-2" href="https://hackatime.hackclub.com/">Hackatime</a>
 			</li>
 			<li>
 				<b>
@@ -82,14 +80,9 @@
 	<div class="flex w-full flex-row justify-center gap-8">
 		<Question question="Where can I learn Tauri?">
 			<p>
-				The <a href="https://v2.tauri.app/start/" class="text-blue-500 hover:text-blue-400">
-					Tauri docs
-				</a>
+				The <a href="https://v2.tauri.app/start/" class="underline decoration-2"> Tauri docs </a>
 				provide a guide for creating a basic project, and you can look at
-				<a
-					href="https://github.com/Shuflduf/Tauri-Game-Launcher"
-					class="text-blue-500 hover:text-blue-400"
-				>
+				<a href="https://github.com/Shuflduf/Tauri-Game-Launcher" class="underline decoration-2">
 					the example project
 				</a> for a complete example.
 			</p>
@@ -97,7 +90,7 @@
 		<Question question="How do I host my app?">
 			<p>
 				<a
-					class="text-blue-500 hover:text-blue-400"
+					class="underline decoration-2"
 					href="https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository"
 				>
 					Github releases.
@@ -144,14 +137,12 @@
 		flipped={false}
 	>
 		If you're more of a visual learner, then this guide by
-		<a href="https://www.youtube.com/@codewithcon" class="text-blue-500 hover:text-blue-400"
-			>Code with Con</a
-		>
+		<a href="https://www.youtube.com/@codewithcon" class="underline decoration-2">Code with Con</a>
 		is for you! It also covers all the prerequisites, such as Rust, and explains why Tauri is better
 		than electron!
 	</Resource>
 	<h2 class="mb-8 text-center font-[Arvo] text-4xl">Support</h2>
-	<p class="mx-auto w-4xl text-center text-xl">
+	<p class="mx-auto w-4xl text-center text-2xl font-bold">
 		If you need help with your project, or just want to talk about Tauri, feel free to talk to us at <FizzlerSlackLink
 		/>, we'll be happy to help!
 	</p>
