@@ -108,7 +108,7 @@
 	</p>
 </div>
 
-<div class="flex w-full flex-col justify-center bg-[#E5A9A9] py-24 text-[#9DF7E5]">
+<div class="flex w-full flex-col justify-center bg-[#D66BA0] py-24 text-[#9DF7E5]">
 	<h1 class="mb-8 text-center font-[Arvo] text-7xl font-bold">Get Started</h1>
 	<h2 class="mb-8 text-center font-[Arvo] text-4xl">Resources</h2>
 	<Resource
