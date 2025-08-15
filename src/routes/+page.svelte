@@ -3,7 +3,7 @@
 	import Question from './Question.svelte';
 </script>
 
-<div class="h-[35rem] w-full bg-[#AF4D98]">
+<div class="h-[40rem] w-full bg-[#AF4D98]">
 	<div class="mx-auto flex h-full w-7xl flex-row items-center">
 		<div class="flex h-full w-full flex-col items-center justify-center">
 			<h1 class="font-[Arvo] text-9xl font-bold text-[#F4E4BA]">Fizzler</h1>
@@ -13,7 +13,7 @@
 	</div>
 </div>
 
-<div class="flex h-[35rem] w-full flex-col justify-center bg-[#D66BA0] text-[#9DF7E5]">
+<div class="flex w-full flex-col justify-center bg-[#D66BA0] py-24 text-[#9DF7E5]">
 	<div class="mx-auto w-[60rem]">
 		<h1 class="mb-8 text-center font-[Arvo] text-7xl font-bold">Instructions</h1>
 		<ul class="flex list-disc flex-col gap-4 text-2xl">
@@ -48,7 +48,7 @@
 	></div>
 {/snippet}
 
-<div class="flex h-[40rem] w-full flex-col justify-center bg-[#9DF7E5] text-[#AF4D98]">
+<div class="flex w-full flex-col justify-center bg-[#9DF7E5] py-24 text-[#AF4D98]">
 	<h1 class="mb-8 text-center font-[Arvo] text-7xl font-bold">FAQ</h1>
 	<div class="flex w-full flex-row justify-center gap-8">
 		<Question question="Can I submit an existing project?">
@@ -102,6 +102,6 @@
 	</div>
 </div>
 
-<div class="flex h-[40rem] w-full flex-col justify-center bg-[#F4E4BA] text-[#D66BA0]">
+<div class="flex w-full flex-col justify-center bg-[#F4E4BA] py-24 text-[#D66BA0]">
 	<h1 class="mb-8 text-center font-[Arvo] text-7xl font-bold">Some Ideas</h1>
 </div>
