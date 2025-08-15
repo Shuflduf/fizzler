@@ -26,7 +26,11 @@
 				and Rust for backend development.
 			</li>
 			<li>
-				<b>Submit your project to earn a <i>Fizzy Drink</i>:</b> Minimum 5 hours, tracked with Hackatime.
+				<b>Submit your project to earn a <i>Fizzy Drink</i>:</b> 5$ USD per hour spent on project,
+				maximum 5 hours. Tracked with
+				<a class="text-blue-500 hover:text-blue-400" href="https://hackatime.hackclub.com/"
+					>Hackatime</a
+				>
 			</li>
 			<li>
 				<b>
@@ -51,7 +55,7 @@
 			<p>You need to create a new project for Fizzler, existing projects won't be accepted.</p>
 		</Question>
 		<Question question="Can I submit my project for Summer of Making as well?">
-			<p>🐸🚀</p>
+			<p>Unfortunately, no...</p>
 		</Question>
 	</div>
 	{@render questionSpacer()}
@@ -86,7 +90,18 @@
 			</p>
 		</Question>
 		<Question question="How do I host my app?">
-			<p>This choice isn't that important, but we recommend using GitHub releases.</p>
+			<p>
+				<a
+					class="text-blue-500 hover:text-blue-400"
+					href="https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository"
+				>
+					Github releases.
+				</a>
+			</p>
 		</Question>
 	</div>
+</div>
+
+<div class="flex h-[40rem] w-full flex-col justify-center bg-[#F4E4BA] text-[#D66BA0]">
+	<h1 class="mb-8 text-center font-[Arvo] text-7xl font-bold">Some Ideas</h1>
 </div>
