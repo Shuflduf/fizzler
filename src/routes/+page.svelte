@@ -1,5 +1,6 @@
 <script>
 	import FizzlerSlackLink from '$lib/FizzlerSlackLink.svelte';
+	import Ideas from './Ideas.svelte';
 	import Question from './Question.svelte';
 </script>
 
@@ -104,4 +105,5 @@
 
 <div class="flex w-full flex-col justify-center bg-[#F4E4BA] py-24 text-[#D66BA0]">
 	<h1 class="mb-8 text-center font-[Arvo] text-7xl font-bold">Some Ideas</h1>
+	<Ideas />
 </div>
