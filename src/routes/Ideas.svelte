@@ -15,7 +15,9 @@
 	});
 
 	function scrollList() {
-		list.scrollBy({ left: DELTA / 10 });
+		if (list) {
+			list.scrollBy({ left: DELTA / 10 });
+		}
 	}
 
 	function onListScroll(e: Event) {

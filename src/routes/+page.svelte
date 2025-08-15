@@ -5,16 +5,15 @@
 	import Resource from './Resource.svelte';
 </script>
 
-<div class="h-[40rem] w-full bg-[#AF4D98]">
+<div class="h-[80vh] w-full bg-[#AF4D98]">
 	<div class="mx-auto flex h-full w-7xl flex-row items-center">
 		<div class="flex h-full w-full flex-col items-center justify-center">
 			<h1 class="font-[Arvo] text-9xl font-bold text-[#F4E4BA]">Fizzler</h1>
 			<h2 class="font-[Arvo] text-4xl text-[#F4E4BA]">Make a Tauri app, Get a Fizzy Drink!</h2>
 		</div>
-		<div class="h-full w-full">
-			some image would go here maybe OR THERES LIKE AN SVG PATH BEHIND THE MAIN TEXT WHICH ANIMATES
-			IN AND IT MASKS IT OUT LIKE YKNOW
-		</div>
+	</div>
+	<div class="absolute top-2/5 left-1/2 -translate-x-1/2 -translate-y-1/2">
+		<img src="bottle.svg" alt="bottle" class="size-[40rem] rotate-45 fill-lime-200" />
 	</div>
 </div>
 
