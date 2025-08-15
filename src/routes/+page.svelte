@@ -117,9 +117,38 @@
 
 <div class="flex w-full flex-col justify-center bg-[#E5A9A9] py-24 text-[#9DF7E5]">
 	<h1 class="mb-8 text-center font-[Arvo] text-7xl font-bold">Get Started</h1>
-	<Resource name="Tauri Docs" imgPath="tauri.webp" flipped={false}>
+	<Resource
+		name="Tauri Docs"
+		imgPath="tauri.webp"
+		link="https://v2.tauri.app/start/"
+		flipped={false}
+	>
 		If you're just starting out, or you need a refresher on the basics, the Tauri docs are perfect
 		for learning what the framework has to offer. Everything on the docs can be applied to your
 		project!
 	</Resource>
+	<Resource
+		name="Example Project"
+		imgPath="github.png"
+		link="https://github.com/Shuflduf/Tauri-Game-Launcher"
+		flipped={true}
+	>
+		Made with SvelteKit for the front-end, and TailwindCSS for styling. You can use it as a
+		reference for more advanced uses of Tauri.
+	</Resource>
+	<Resource
+		name="Video Guide"
+		imgPath="youtube.svg"
+		link="https://www.youtube.com/watch?v=BGm0SCfY5Ak"
+		flipped={false}
+	>
+		If you're more of a visual learner, then this guide by
+		<a href="https://www.youtube.com/@codewithcon" class="text-blue-500 hover:text-blue-400"
+			>Code with Con</a
+		>
+		is for you! It also covers all the prerequisites, such as Rust, and explains why Tauri is better
+		than electron!
+	</Resource>
 </div>
+
+<!-- <div class="h-[10rem] w-full bg-[#AF4D98]"></div> -->
