@@ -1,20 +1,19 @@
 <script>
 	import FizzlerSlackLink from '$lib/FizzlerSlackLink.svelte';
-	import SlackLink from '$lib/SlackLink.svelte';
 	import Question from './Question.svelte';
 </script>
 
-<div class="h-[35rem] w-full bg-[#CEB1BE]">
+<div class="h-[35rem] w-full bg-[#AF4D98]">
 	<div class="mx-auto flex h-full w-7xl flex-row items-center">
 		<div class="flex h-full w-full flex-col items-center justify-center">
-			<h1 class="font-[Arvo] text-9xl font-bold text-[#2D2D34]">Fizzler</h1>
-			<h2 class="font-[Arvo] text-4xl text-[#2D2D34]">Make a Tauri app, Get a Fizzy Drink!</h2>
+			<h1 class="font-[Arvo] text-9xl font-bold text-[#F4E4BA]">Fizzler</h1>
+			<h2 class="font-[Arvo] text-4xl text-[#F4E4BA]">Make a Tauri app, Get a Fizzy Drink!</h2>
 		</div>
 		<div class="h-full w-full">some image would go here maybe</div>
 	</div>
 </div>
-<div class="h-1 w-full bg-[#B97375]"></div>
-<div class="flex h-[35rem] w-full flex-col justify-center bg-[#E2DCDE]">
+
+<div class="flex h-[35rem] w-full flex-col justify-center bg-[#D66BA0] text-[#9DF7E5]">
 	<div class="mx-auto w-[60rem]">
 		<h1 class="mb-8 text-center font-[Arvo] text-7xl font-bold">Instructions</h1>
 		<ul class="flex list-disc flex-col gap-4 text-2xl">
@@ -38,10 +37,15 @@
 		</ul>
 	</div>
 </div>
-<div class="h-1 w-full bg-[#B97375]"></div>
 
-<div class="flex h-[40rem] w-full flex-col justify-center gap-8 bg-[#F1E4E8]">
-	<h1 class="text-center">FAQ</h1>
+{#snippet questionSpacer()}
+	<div
+		class="mx-auto my-4 h-1 w-2xl rounded-full bg-[#AF4D98] mask-radial-from-0 mask-radial-to-80% mask-radial-at-center"
+	></div>
+{/snippet}
+
+<div class="flex h-[40rem] w-full flex-col justify-center bg-[#9DF7E5] text-[#AF4D98]">
+	<h1 class="mb-8 text-center font-[Arvo] text-7xl font-bold">FAQ</h1>
 	<div class="flex w-full flex-row justify-center gap-8">
 		<Question question="Can I submit an existing project?">
 			<p>You need to create a new project for Fizzler, existing projects won't be accepted.</p>
@@ -50,6 +54,7 @@
 			<p>🐸🚀</p>
 		</Question>
 	</div>
+	{@render questionSpacer()}
 	<div class="flex w-full flex-row justify-center gap-8">
 		<Question question="Is AI allowed?">
 			<p>
@@ -64,6 +69,7 @@
 			</p>
 		</Question>
 	</div>
+	{@render questionSpacer()}
 	<div class="flex w-full flex-row justify-center gap-8">
 		<Question question="Where can I learn Tauri?">
 			<p>
