@@ -157,4 +157,14 @@
 	</p>
 </div>
 
-<div class="h-[10rem] w-full bg-[#AF4D98]">Legal stuf probably</div>
+<div
+	class="flex w-full flex-row items-center justify-between bg-[#AF4D98] p-8 font-[Arvo] text-[#F4E4BA]"
+>
+	<div>
+		<h1 class="text-3xl font-bold">Fizzler</h1>
+		<a href="https://github.com/Shuflduf/fizzler" class="underline decoration-2">
+			Site made with Love, Svelte, and Tailwind!
+		</a>
+	</div>
+	&copy 2025 Hack Club
+</div>
