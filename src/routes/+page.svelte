@@ -117,6 +117,7 @@
 
 <div class="flex w-full flex-col justify-center bg-[#E5A9A9] py-24 text-[#9DF7E5]">
 	<h1 class="mb-8 text-center font-[Arvo] text-7xl font-bold">Get Started</h1>
+	<h2 class="mb-8 text-center font-[Arvo] text-4xl">Resources</h2>
 	<Resource
 		name="Tauri Docs"
 		imgPath="tauri.webp"
@@ -149,6 +150,11 @@
 		is for you! It also covers all the prerequisites, such as Rust, and explains why Tauri is better
 		than electron!
 	</Resource>
+	<h2 class="mb-8 text-center font-[Arvo] text-4xl">Support</h2>
+	<p class="mx-auto w-4xl text-center text-xl">
+		If you need help with your project, or just want to talk about Tauri, feel free to talk to us at <FizzlerSlackLink
+		/>, we'll be happy to help!
+	</p>
 </div>
 
-<!-- <div class="h-[10rem] w-full bg-[#AF4D98]"></div> -->
+<div class="h-[10rem] w-full bg-[#AF4D98]">Legal stuf probably</div>
