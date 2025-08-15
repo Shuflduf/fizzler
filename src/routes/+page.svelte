@@ -142,7 +142,7 @@
 		than electron!
 	</Resource>
 	<h2 class="mb-8 text-center font-[Arvo] text-4xl">Support</h2>
-	<p class="mx-auto w-4xl text-center text-2xl font-bold">
+	<p class="mx-auto w-4xl text-center text-xl font-bold">
 		If you need help with your project, or just want to talk about Tauri, feel free to talk to us at <FizzlerSlackLink
 		/>, we'll be happy to help!
 	</p>

@@ -18,7 +18,7 @@
 		<p>{name}</p>
 	</a>
 	<div class="h-48 min-w-1 rounded-full bg-[#9DF7E5] mask-y-from-80% mask-y-to-100%"></div>
-	<p class="text-xl font-bold {flipped ? 'text-right' : 'text-left'}">
+	<p class="text-lg font-bold {flipped ? 'text-right' : 'text-left'}">
 		{@render children()}
 	</p>
 </div>
