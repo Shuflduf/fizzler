@@ -12,9 +12,9 @@
 			<h2 class="font-[Arvo] text-4xl text-[#F4E4BA]">Make a Tauri app, Get a Fizzy Drink!</h2>
 		</div>
 	</div>
-	<div class="absolute top-2/5 left-1/2 -translate-x-1/2 -translate-y-1/2">
-		<img src="bottle.svg" alt="bottle" class="size-[40rem] rotate-45 fill-lime-200" />
-	</div>
+	<!-- <div class="absolute top-2/5 left-1/2 -translate-x-1/2 -translate-y-1/2"> -->
+	<!-- 	<img src="bottle.svg" alt="bottle" class="size-[40rem] rotate-45" /> -->
+	<!-- </div> -->
 </div>
 
 <div class="flex w-full flex-col justify-center bg-[#D66BA0] py-24 text-[#9DF7E5]">
@@ -70,8 +70,9 @@
 		</Question>
 		<Question question="What platforms do I make my app for?">
 			<p>
-				If you're making a desktop app, then Windows, MacOS, and Linux. If you're making a mobile
-				app, then just Android. (IF IOS THEN REACH OUT TO US ON SLACK (<FizzlerSlackLink />))
+				If you're making a desktop app then you only need one of Windows, MacOS, or Linux. If you're
+				making a mobile app, then just Android. (IF IOS THEN REACH OUT TO US ON SLACK (<FizzlerSlackLink
+				/>))
 			</p>
 		</Question>
 	</div>
