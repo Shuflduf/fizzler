@@ -3,7 +3,18 @@
 
 	const DELTA = 60 / 1000;
 	const MAX_SPEED = 20.0;
-	const IMAGE_PATHS = ['fizzies/pepsi.png', 'fizzies/monster.png', 'fizzies/lemonade.png'];
+	const IMAGE_PATHS = [
+		'fizzies/pepsi.png',
+		'fizzies/monster.png',
+		'fizzies/lemonade.png',
+		'fizzies/roober.png',
+		'fizzies/crush.png',
+		'fizzies/creamsoda.png',
+		'fizzies/cocacola.png',
+		'fizzies/sprite.png',
+		'fizzies/gingerale.png',
+		'fizzies/7up.png'
+	];
 
 	class Vec2 {
 		x: number;
