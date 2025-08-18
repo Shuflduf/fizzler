@@ -1,14 +1,17 @@
 <script>
 	import FizzlerSlackLink from '$lib/FizzlerSlackLink.svelte';
+	import Bottle from './Bottle.svelte';
 	import Ideas from './Ideas.svelte';
 	import Question from './Question.svelte';
 	import Resource from './Resource.svelte';
 </script>
 
+<Bottle />
+
 <div class="h-[80vh] w-full bg-[#AF4D98]">
 	<div class="mx-auto flex h-full w-7xl flex-row items-center">
 		<div class="flex h-full w-full flex-col items-center justify-center">
-			<h1 class="font-[Arvo] text-9xl font-bold text-[#F4E4BA]">Fizzler</h1>
+			<h1 class="font-[Arvo] text-[9rem] font-bold text-[#F4E4BA]">Fizzler</h1>
 			<h2 class="font-[Arvo] text-4xl text-[#F4E4BA]">Make a Tauri app, Get a Fizzy Drink!</h2>
 		</div>
 	</div>
