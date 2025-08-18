@@ -12,8 +12,8 @@
 <div class="h-[70vh] w-full bg-[#AF4D98] md:h-[80vh]">
 	<div class="mx-auto flex h-full flex-row items-center justify-center">
 		<div class="mx-8 flex h-full w-full flex-col items-center justify-center">
-			<h1 class="font-[Arvo] text-7xl font-bold text-[#F4E4BA] md:text-[9rem]">Fizzler</h1>
-			<h2 class="text-center font-[Arvo] text-2xl text-[#F4E4BA] md:text-4xl">
+			<h1 class="font-[Arvo] text-9xl font-bold text-[#F4E4BA] md:text-[9rem]">Fizzler</h1>
+			<h2 class="text-center font-[Arvo] text-3xl text-[#F4E4BA] md:text-4xl">
 				Make a Tauri app, Get a Fizzy Drink!
 			</h2>
 		</div>
