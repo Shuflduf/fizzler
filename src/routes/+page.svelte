@@ -1,13 +1,12 @@
 <script>
 	import FizzlerSlackLink from '$lib/FizzlerSlackLink.svelte';
-	import Bottle from './Bottle.svelte';
+	import BottleSpawner from './BottleSpawner.svelte';
 	import Ideas from './Ideas.svelte';
 	import Question from './Question.svelte';
 	import Resource from './Resource.svelte';
 </script>
 
-<Bottle />
-
+<BottleSpawner />
 <div class="h-[80vh] w-full bg-[#AF4D98]">
 	<div class="mx-auto flex h-full w-7xl flex-row items-center">
 		<div class="flex h-full w-full flex-col items-center justify-center">
