@@ -9,7 +9,8 @@
 	onMount(() => {
 		count = 0;
 		setInterval(spawn, 1000);
-		window.addEventListener('resize', (e: UIEvent) => {
+		setInterval(() => (count = 0), 100000);
+		window.addEventListener('resize', (_: UIEvent) => {
 			isMobile = window.innerWidth < 768;
 		});
 		isMobile = window.innerWidth < 768;

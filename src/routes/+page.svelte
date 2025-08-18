@@ -1,5 +1,6 @@
 <script>
 	import FizzlerSlackLink from '$lib/FizzlerSlackLink.svelte';
+	import SlackLink from '$lib/SlackLink.svelte';
 	import BottleSpawner from './BottleSpawner.svelte';
 	import Ideas from './Ideas.svelte';
 	import Question from './Question.svelte';
@@ -16,6 +17,10 @@
 			<h2 class="text-center font-[Arvo] text-3xl text-[#F4E4BA] md:text-4xl">
 				Make a Tauri app, Get a Fizzy Drink!
 			</h2>
+			<a
+				class="mt-4 rounded-md bg-[#F4E4BA] p-4 font-[Arvo] text-2xl text-[#AF4D98]"
+				href="https://hackclub.slack.com/archives/C09AD0R1SUV">Join <FizzlerSlackLink />!</a
+			>
 		</div>
 	</div>
 	<!-- <div class="absolute top-2/5 left-1/2 -translate-x-1/2 -translate-y-1/2"> -->
