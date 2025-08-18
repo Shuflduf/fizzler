@@ -24,9 +24,9 @@
 </div>
 
 <div class="flex w-full flex-col justify-center bg-[#D66BA0] py-24 text-[#9DF7E5]">
-	<div class="mr-4 ml-8 max-w-[60rem] md:mx-auto">
-		<h1 class="mb-8 text-center font-[Arvo] text-7xl font-bold">Instructions</h1>
-		<ul class="flex list-disc flex-col gap-4 text-2xl">
+	<div class="max-w-[60rem] md:mx-auto">
+		<h1 class="mb-8 text-center font-[Arvo] text-6xl font-bold md:text-7xl">Instructions</h1>
+		<ul class="mr-4 ml-8 flex list-disc flex-col gap-4 text-xl md:text-2xl">
 			<li>
 				<b>Come up with an idea:</b> Your Tauri app could be anything from a music player to a desktop
 				pet! Be creative!
