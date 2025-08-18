@@ -9,9 +9,9 @@
 </script>
 
 <div
-	class="mx-auto flex w-5xl items-center justify-between gap-8 {flipped
-		? 'flex-row-reverse'
-		: 'flex-row'}"
+	class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 md:gap-8 {flipped
+		? 'md:flex-row-reverse'
+		: 'md:flex-row'}"
 >
 	<a
 		href={link}
@@ -20,8 +20,10 @@
 		<img src={imgPath} alt="tauri" class="asp mx-auto mb-4 h-24 transition group-hover:scale-105" />
 		<p>{name}</p>
 	</a>
-	<div class="h-48 min-w-1 rounded-full bg-[#9DF7E5] mask-y-from-80% mask-y-to-100%"></div>
-	<p class="text-lg font-bold {flipped ? 'text-right' : 'text-left'}">
+	<div
+		class="hidden h-48 min-w-1 rounded-full bg-[#9DF7E5] mask-y-from-80% mask-y-to-100% md:block"
+	></div>
+	<p class="text-center text-lg font-bold {flipped ? 'md:text-right' : 'md:text-left'}">
 		{@render children()}
 	</p>
 </div>

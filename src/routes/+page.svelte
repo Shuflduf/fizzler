@@ -7,11 +7,15 @@
 </script>
 
 <BottleSpawner />
-<div class="h-[80vh] w-full bg-[#AF4D98]">
-	<div class="mx-auto flex h-full w-7xl flex-row items-center">
-		<div class="flex h-full w-full flex-col items-center justify-center">
-			<h1 class="font-[Arvo] text-[9rem] font-bold text-[#F4E4BA]">Fizzler</h1>
-			<h2 class="font-[Arvo] text-4xl text-[#F4E4BA]">Make a Tauri app, Get a Fizzy Drink!</h2>
+
+<!-- TODO: make this look better on mobile -->
+<div class="h-[70vh] w-full bg-[#AF4D98] md:h-[80vh]">
+	<div class="mx-auto flex h-full flex-row items-center justify-center">
+		<div class="mx-8 flex h-full w-full flex-col items-center justify-center">
+			<h1 class="font-[Arvo] text-7xl font-bold text-[#F4E4BA] md:text-[9rem]">Fizzler</h1>
+			<h2 class="text-center font-[Arvo] text-2xl text-[#F4E4BA] md:text-4xl">
+				Make a Tauri app, Get a Fizzy Drink!
+			</h2>
 		</div>
 	</div>
 	<!-- <div class="absolute top-2/5 left-1/2 -translate-x-1/2 -translate-y-1/2"> -->
@@ -20,7 +24,7 @@
 </div>
 
 <div class="flex w-full flex-col justify-center bg-[#D66BA0] py-24 text-[#9DF7E5]">
-	<div class="mx-auto w-[60rem]">
+	<div class="mr-4 ml-8 max-w-[60rem] md:mx-auto">
 		<h1 class="mb-8 text-center font-[Arvo] text-7xl font-bold">Instructions</h1>
 		<ul class="flex list-disc flex-col gap-4 text-2xl">
 			<li>
@@ -46,30 +50,34 @@
 	</div>
 </div>
 
-{#snippet questionSpacer()}
+{#snippet questionSpacer(mobile)}
 	<div
-		class="mx-auto my-4 h-1 w-2xl rounded-full bg-[#AF4D98] mask-radial-from-0 mask-radial-to-80% mask-radial-at-center"
+		class="mx-auto h-1 w-full max-w-2xl rounded-full bg-[#AF4D98] mask-radial-from-0 mask-radial-to-80% mask-radial-at-center
+      {mobile ? 'md:hidden' : 'my-4'}
+    "
 	></div>
 {/snippet}
 
-<div class="flex w-full flex-col justify-center bg-[#9DF7E5] py-24 text-[#AF4D98]">
+<div class="flex w-full flex-col justify-center bg-[#9DF7E5] px-4 py-24 text-[#AF4D98]">
 	<h1 class="mb-8 text-center font-[Arvo] text-7xl font-bold">FAQ</h1>
-	<div class="flex w-full flex-row justify-center gap-8">
+	<div class="flex w-full flex-col items-center justify-center gap-4 md:flex-row md:gap-8">
 		<Question question="Can I submit an existing project?">
 			<p>You need to create a new project for Fizzler, existing projects won't be accepted.</p>
 		</Question>
+		{@render questionSpacer(true)}
 		<Question question="Can I submit my project for Summer of Making as well?">
 			<p>Unfortunately, no...</p>
 		</Question>
 	</div>
-	{@render questionSpacer()}
-	<div class="flex w-full flex-row justify-center gap-8">
+	{@render questionSpacer(false)}
+	<div class="flex w-full flex-col items-center justify-center gap-4 md:flex-row md:gap-8">
 		<Question question="Is AI allowed?">
 			<p>
 				We advise against it, since it removes the fun of making it yourself, but if you do use it,
 				you need to say so on your submission form.
 			</p>
 		</Question>
+		{@render questionSpacer(true)}
 		<Question question="What platforms do I make my app for?">
 			<p>
 				If you're making a desktop app then you only need one of Windows, MacOS, or Linux. If you're
@@ -78,8 +86,8 @@
 			</p>
 		</Question>
 	</div>
-	{@render questionSpacer()}
-	<div class="flex w-full flex-row justify-center gap-8">
+	{@render questionSpacer(false)}
+	<div class="flex w-full flex-col items-center justify-center gap-4 md:flex-row md:gap-8">
 		<Question question="Where can I learn Tauri?">
 			<p>
 				The <a href="https://v2.tauri.app/start/" class="underline decoration-2"> Tauri docs </a>
@@ -89,6 +97,7 @@
 				</a> for a complete example.
 			</p>
 		</Question>
+		{@render questionSpacer(true)}
 		<Question question="How do I host my app?">
 			<p>
 				<a
@@ -102,7 +111,7 @@
 	</div>
 </div>
 
-<div class="flex w-full flex-col justify-center bg-[#F4E4BA] py-24 text-[#D66BA0]">
+<div class="flex w-full flex-col justify-center bg-[#F4E4BA] px-4 py-24 text-[#D66BA0]">
 	<h1 class="mb-8 text-center font-[Arvo] text-7xl font-bold">Some Ideas</h1>
 	<Ideas />
 	<p class="mt-4 text-center text-xl font-bold">
@@ -110,7 +119,7 @@
 	</p>
 </div>
 
-<div class="flex w-full flex-col justify-center bg-[#D66BA0] py-24 text-[#9DF7E5]">
+<div class="flex w-full flex-col justify-center bg-[#D66BA0] px-4 py-24 text-[#9DF7E5]">
 	<h1 class="mb-8 text-center font-[Arvo] text-7xl font-bold">Get Started</h1>
 	<h2 class="mb-8 text-center font-[Arvo] text-4xl">Resources</h2>
 	<Resource
@@ -123,6 +132,9 @@
 		for learning what the framework has to offer. Everything on the docs can be applied to your
 		project!
 	</Resource>
+	<div
+		class="mx-8 my-4 h-1 rounded-full bg-[#9DF7E5] mask-x-from-80% mask-x-to-100% md:hidden"
+	></div>
 	<Resource
 		name="Example Project"
 		imgPath="github.png"
@@ -132,6 +144,9 @@
 		Made with SvelteKit for the front-end, and TailwindCSS for styling. You can use it as a
 		reference for more advanced uses of Tauri.
 	</Resource>
+	<div
+		class="mx-8 my-4 h-1 rounded-full bg-[#9DF7E5] mask-x-from-80% mask-x-to-100% md:hidden"
+	></div>
 	<Resource
 		name="Video Guide"
 		imgPath="youtube.svg"
@@ -143,8 +158,8 @@
 		is for you! It also covers all the prerequisites, such as Rust, and explains why Tauri is better
 		than electron!
 	</Resource>
-	<h2 class="mb-8 text-center font-[Arvo] text-4xl">Support</h2>
-	<p class="mx-auto w-4xl text-center text-xl font-bold">
+	<h2 class="mt-16 mb-8 text-center font-[Arvo] text-4xl md:mt-0">Support</h2>
+	<p class="mx-auto max-w-4xl text-center text-xl font-bold">
 		If you need help with your project, or just want to talk about Tauri, feel free to talk to us at <FizzlerSlackLink
 		/>, we'll be happy to help!
 	</p>

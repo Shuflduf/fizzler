@@ -112,7 +112,6 @@
 		rot += vel.x * DELTA;
 
 		if (held) {
-			console.log(mousePos);
 			pos = pos.lerp(mousePos.plus(new Vec2(-48, -48)), DELTA * 5);
 			vel = new Vec2(0, 0);
 		}
