@@ -10,7 +10,9 @@
 	});
 
 	function spawn() {
-		count++;
+		if (document.visibilityState == 'visible') {
+			count++;
+		}
 	}
 </script>
 
