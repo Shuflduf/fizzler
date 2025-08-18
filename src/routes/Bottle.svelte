@@ -83,7 +83,7 @@
 
 	function process() {
 		// pos.add(vel);
-		vel = vel.plus(new Vec2(0.0, 0.2));
+		vel = vel.plus(new Vec2(0.0, 10 * DELTA));
 		if (vel.y > MAX_SPEED) {
 			vel = vel.lerp(new Vec2(vel.x, MAX_SPEED), DELTA);
 		}
@@ -98,10 +98,12 @@
 		}
 
 		pos = pos.plus(vel.scale(DELTA));
+		rot += vel.x * DELTA;
 
 		if (held) {
 			console.log(mousePos);
 			pos = mousePos.plus(new Vec2(-48, -48));
+			vel = new Vec2(0, 0);
 		}
 	}
 
